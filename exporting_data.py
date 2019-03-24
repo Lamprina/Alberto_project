@@ -5,16 +5,6 @@ Created on Mon Jan 30 13:25:40 2017
 @author: py15asm
 """
 
-import os, os.path
-import glob
-import numpy as np
-from os import listdir
-import numpy as np
-import matplotlib.pyplot as plt
-import pylab
-import matplotlib.pyplot as plt
-import datetime
-import csv
 
 paths=[]
 path=[]
@@ -39,10 +29,6 @@ for name in glob.glob(day_folder+'/*'):
 
 paths.sort()    
 
-
-#if there are folders corresponding to something that it is not a day, they will appear at the end. The next command removes the last folder, in the initial case, the folder "Don't use"
-counter=0
-header=''
 paths=paths[:-1]
 number_days=len(paths)
 for i in range(0,number_days):
